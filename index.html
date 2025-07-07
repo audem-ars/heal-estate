@@ -334,8 +334,12 @@
     </div>
     
     <div class="email-section">
-        <input type="email" class="email-input" placeholder="Enter your email for exclusive access">
-        <button class="shiny-button" onclick="handleEmailSubmit()">Begin Your Transformation</button>
+        <form action="https://formspree.io/f/xovwzzol" method="POST">
+            <input type="email" name="email" class="email-input" placeholder="Enter your email for exclusive access" required>
+            <input type="hidden" name="_subject" value="🚨 NEW HEAL ESTATE SIGNUP - High Priority Lead!">
+            <input type="hidden" name="_next" value="https://heal-estate.netlify.app">
+            <button type="submit" class="premium-button">Begin Transformation</button>
+        </form>
     </div>
     
     <script>
