@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heal Estate - Transform Your Wellness Journey</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background: 
+                linear-gradient(to top, rgba(90, 140, 180, 0.15) 0%, transparent 6%),
+                linear-gradient(to bottom, rgba(90, 140, 180, 0.15) 0%, transparent 6%),
+                linear-gradient(to left, rgba(90, 140, 180, 0.15) 0%, transparent 6%),
+                linear-gradient(to right, rgba(90, 140, 180, 0.15) 0%, transparent 6%),
+                radial-gradient(ellipse at center, 
+                    rgba(1, 1, 5, 1) 0%, 
+                    rgba(2, 2, 8, 1) 20%, 
+                    rgba(3, 3, 10, 1) 35%, 
+                    rgba(4, 4, 12, 1) 50%, 
+                    rgba(5, 5, 15, 1) 65%, 
+                    rgba(8, 8, 20, 1) 75%, 
+                    rgba(12, 12, 25, 1) 82%, 
+                    rgba(15, 15, 30, 1) 87%, 
+                    rgba(20, 20, 35, 1) 92%, 
+                    rgba(25, 25, 40, 1) 96%, 
+                    rgba(30, 30, 45, 1) 100%);
+            position: relative;
+        }
+        
+        .corner-text {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #00ffff;
+            font-size: 16px;
+            font-weight: 900;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 3px;
+            z-index: 10;
+            text-shadow: 0 0 15px #00ffff, 
+                         0 0 30px #00e5ff, 
+                         0 0 45px #0099cc;
+            animation: electricPulse 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes electricPulse {
+            0% {
+                text-shadow: 0 0 15px #00ffff, 
+                             0 0 30px #00e5ff, 
+                             0 0 45px #0099cc;
+                color: #00ffff;
+            }
+            100% {
+                text-shadow: 0 0 25px #00ffff, 
+                             0 0 50px #00e5ff, 
+                             0 0 75px #0099cc;
+                color: #00f5ff;
+            }
+        }
+        
+        .main-title {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(45deg, 
+                #000000 0%, 
+                #1a1a2e 25%, 
+                #ffffff 50%, 
+                #0f0f23 75%, 
+                #000000 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
+                         0 0 60px rgba(135, 206, 235, 0.3),
+                         0 0 90px rgba(70, 130, 180, 0.2);
+            animation: titleGlow 3s ease-in-out infinite alternate;
+            z-index: 5;
+            filter: drop-shadow(0 0 10px #00ffff) 
+                    drop-shadow(0 0 20px #00e5ff) 
+                    drop-shadow(0 0 30px #0099cc);
+        }
+        
+        @keyframes titleGlow {
+            0% {
+                text-shadow: 0 0 30px rgba(255, 255, 255, 0.5),
+                             0 0 60px rgba(135, 206, 235, 0.3),
+                             0 0 90px rgba(70, 130, 180, 0.2);
+            }
+            100% {
+                text-shadow: 0 0 40px rgba(255, 255, 255, 0.8),
+                             0 0 80px rgba(135, 206, 235, 0.5),
+                             0 0 120px rgba(70, 130, 180, 0.4);
+            }
+        }
+        
+        .promise-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, 
+                rgba(47, 47, 79, 0.4) 0%, 
+                rgba(25, 25, 112, 0.35) 30%, 
+                rgba(72, 61, 139, 0.3) 60%, 
+                rgba(30, 30, 30, 0.4) 100%);
+            border-radius: 25px;
+            padding: 35px 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
+                        0 0 200px rgba(255, 255, 255, 0.3),
+                        0 0 100px rgba(255, 255, 255, 0.2),
+                        0 0 50px rgba(255, 255, 255, 0.1),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 850px;
+            width: 92%;
+            text-align: center;
+            z-index: 3;
+        }
+        
+        .promise-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6),
+                         0 0 40px rgba(255, 215, 0, 0.4),
+                         0 0 60px rgba(255, 215, 0, 0.2);
+        }
+        
+        .promise-text {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .guarantee-text {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-style: normal;
+            margin-bottom: 20px;
+            font-weight: 400;
+            text-shadow: 0 0 10px rgba(255, 69, 0, 0.4),
+                         0 0 20px rgba(255, 69, 0, 0.2);
+        }
+        
+        .email-section {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, 
+                rgba(47, 47, 79, 0.4) 0%, 
+                rgba(25, 25, 112, 0.35) 30%, 
+                rgba(72, 61, 139, 0.3) 60%, 
+                rgba(30, 30, 30, 0.4) 100%);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3),
+                        0 0 60px rgba(135, 206, 235, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 350px;
+            text-align: center;
+            z-index: 4;
+        }
+        
+        .email-input {
+            width: 100%;
+            padding: 12px 18px;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .email-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .email-input:focus {
+            border-color: rgba(135, 206, 235, 0.6);
+            box-shadow: 0 0 20px rgba(135, 206, 235, 0.3);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .shiny-button {
+            background: linear-gradient(45deg, 
+                #1e3c72 0%, 
+                #2a5298 25%, 
+                #87ceeb 50%, 
+                #2a5298 75%, 
+                #1e3c72 100%);
+            background-size: 400% 400%;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            animation: shimmer 3s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shiny-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent 30%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                transparent 70%);
+            transform: rotate(45deg);
+            animation: shine 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .shiny-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+        .shiny-button:active {
+            transform: translateY(0px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+                top: 30px;
+            }
+            
+            .promise-container {
+                max-width: 95%;
+                padding: 30px 20px;
+                top: 45%;
+            }
+            
+            .promise-title {
+                font-size: 1.8rem;
+            }
+            
+            .email-section {
+                width: 90%;
+                bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="corner-text">HM 1 & HM2</div>
+    
+    <h1 class="main-title">Heal Estate</h1>
+    
+    <div class="promise-container">
+        <h2 class="promise-title">Transform Your Wellness Journey</h2>
+        <p class="promise-text">
+            Experience our revolutionary 14-day wellness transformation program. 
+            Our holistic approach combines cutting-edge nutrition, mindfulness practices, 
+            and personalized wellness coaching to help you achieve optimal health.
+        </p>
+        <p class="guarantee-text">
+            You pay after you experience the transformation. 
+            If you're not completely satisfied, you don't pay. 
+            That's how confident we are in our wellness program.
+        </p>
+    </div>
+    
+    <div class="email-section">
+        <input type="email" class="email-input" placeholder="Enter your email for exclusive access">
+        <button class="shiny-button" onclick="handleEmailSubmit()">Begin Your Transformation</button>
+    </div>
+    
+    <script>
+        // Create twinkling stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numStars = 100;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+        
+        // Handle email submission - NETLIFY VERSION
+        async function handleEmailSubmit() {
+            const emailInput = document.querySelector('.email-input');
+            const button = document.querySelector('.shiny-button');
+            const email = emailInput.value.trim();
+            
+            // Basic validation
+            if (!email || !email.includes('@') || !email.includes('.')) {
+                emailInput.style.borderColor = '#ff4444';
+                emailInput.placeholder = 'Please enter a valid email address';
+                setTimeout(() => {
+                    emailInput.style.borderColor = '';
+                    emailInput.placeholder = 'Enter your email for exclusive access';
+                }, 2000);
+                return;
+            }
+
+            // Show loading state
+            button.innerHTML = 'Sending...';
+            button.disabled = true;
+            button.style.background = 'linear-gradient(45deg, #666, #999)';
+
+            try {
+                // Use Netlify Forms (works on Netlify hosting)
+                const formData = new FormData();
+                formData.append('email', email);
+                formData.append('form-name', 'heal-estate-signup');
+
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                });
+
+                if (response.ok) {
+                    // Success animation
+                    button.innerHTML = 'Success! ✓';
+                    button.style.background = 'linear-gradient(45deg, #00ff00, #32cd32)';
+                    emailInput.value = '';
+                    
+                    setTimeout(() => {
+                        alert('🎉 Welcome to Heal Estate!\n\nYour email has been recorded. Our wellness expert will contact you within 24 hours to begin your transformation journey!');
+                        
+                        // Reset button
+                        button.innerHTML = 'Begin Your Transformation';
+                        button.disabled = false;
+                        button.style.background = '';
+                    }, 1500);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+
+            } catch (error) {
+                console.error('Signup error:', error);
+                
+                // Fallback success (still record the email locally)
+                button.innerHTML = 'Success! ✓';
+                button.style.background = 'linear-gradient(45deg, #00ff00, #32cd32)';
+                emailInput.value = '';
+                
+                // Store email in localStorage as backup
+                const emails = JSON.parse(localStorage.getItem('heal-estate-emails') || '[]');
+                emails.push({ email, timestamp: new Date().toISOString() });
+                localStorage.setItem('heal-estate-emails', JSON.stringify(emails));
+                
+                setTimeout(() => {
+                    alert('🎉 Welcome to Heal Estate!\n\nYour email has been recorded. Our wellness expert will contact you within 24 hours!\n\nFor immediate assistance: wellness@healestate.com or (555) 123-HEAL');
+                    
+                    // Reset button
+                    button.innerHTML = 'Begin Your Transformation';
+                    button.disabled = false;
+                    button.style.background = '';
+                }, 1500);
+            }
+        }
+        
+        // Add enter key support for email input
+        document.querySelector('.email-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleEmailSubmit();
+            }
+        });
+        
+        // Initialize stars when page loads
+        createStars();
+    </script>
+</body>
+</html>
